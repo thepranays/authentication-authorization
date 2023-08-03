@@ -27,11 +27,9 @@ export const CreateUserForm = (props) => {
         }
 
     }
-
-
-
+    const closeModalOnBackdropTap = (e) => { if (e.target == document.getElementById("modalwrapper")) props.closeModal() };
     return (
-        <div className="modal-wrapper">
+        <div id="modalwrapper" className="modal-wrapper" onClick={closeModalOnBackdropTap} >
             <div className="create-user-container">
                 <form className="create-user-form">
                     <label htmlFor="username">USERNAME:</label>

@@ -47,14 +47,18 @@
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: white;
-    padding: 2rem 2rem;
+    padding: 30px 30px 30px 30px;
 
 
 
-    max-width: 15rem;
+    max-width: 400px;
     border-radius: 1rem;
 
 
+}
+
+input {
+    width: 100%;
 }
 
 * {
