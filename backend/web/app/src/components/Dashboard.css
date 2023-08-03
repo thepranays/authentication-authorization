@@ -1,0 +1,63 @@
+table {
+    width: 100%;
+}
+
+.dashboard-screen {
+    display: flex;
+
+
+
+}
+
+.dashboard-container {
+
+    width: 100vw;
+
+}
+
+.dashboard-list {
+    margin-top: 100px;
+
+    width: 100%;
+}
+
+
+
+.dash-button {
+    display: inline-block;
+    position: fixed;
+    right: 10px;
+
+}
+
+.dash-button-create {
+    background-color: #0a0a29;
+    --bs-btn-hover-bg: #131349;
+    --bs-btn-padding-y: 0.175rem;
+    --bs-btn-font-size: .9rem;
+}
+
+.container-fluid {
+    background-color: #e6e6f9;
+    height: 55px;
+
+
+}
+
+.bg-body-tertiary {
+    padding: 0px;
+    position: fixed;
+    width: 100%;
+
+
+
+}
+
+.dashboard-drawer {
+    background-color: #0a0a29;
+
+    width: 300px;
+
+
+
+}

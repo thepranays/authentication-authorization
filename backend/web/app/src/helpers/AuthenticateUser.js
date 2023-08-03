@@ -14,8 +14,9 @@ export async function ValidateSession() {
 
     });
     const users = await res.json();
+
     //returns true if session valid and also returns all users in current user's org
-    return [res.status === 200, users];
+    return [res.status === 200, users, res.status];
 }
 
 export async function AuthenticateUser(username, password) {

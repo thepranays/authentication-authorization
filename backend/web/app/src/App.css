@@ -1,69 +1,93 @@
+/* green: #2ecc71;
+red: #e74c3c;
+$blue: #3498db;
+$yellow: #f1c40f;
+$purple: #8e44ad;
+$turquoise: #1abc9c; */
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .App {
   display: flex;
   /*uses 100% viewport as min height*/
-  min-height: 100vh; 
-  justify-content: left;  
-  background: linear-gradient(110.6deg, rgb(156, 116, 129) -18.3%, rgb(67, 54, 74) 16.4%, rgb(47, 48, 67) 68.2%, rgb(27, 23, 36) 99.1%);
+  min-height: 100vh;
+  justify-content: left;
+  background-color: white;
+  /* background: linear-gradient(110.6deg, rgb(156, 116, 129) -18.3%, rgb(67, 54, 74) 16.4%, rgb(47, 48, 67) 68.2%, rgb(27, 23, 36) 99.1%); */
 }
 
 
-.div-login-container,.login-form{
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: center;
-    flex-direction: column;
-    
-}
-label{
-  color:white;
+
+
+label {
+  color: black;
   display: flex;
-  text-align: left;
+
   padding: .5rem 0;
 }
 
-input{
+input {
   margin: .5rem 0;
   border-radius: 8px;
+  border: none;
   padding: 0.5rem;
-  border:none;
+  text-decoration-color: black;
+  opacity: 0.5;
+  background-color: #77aaff;
 }
 
-button{
+
+
+
+.container {
+  padding-top: 50px;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+}
+
+
+span {
+  display: block;
+  margin-top: 2rem;
+  font-size: .7rem;
+  color: #777;
+
+  a {
+    font-size: .7rem;
+    color: #999;
+    text-decoration: underline;
+  }
+}
+
+
+
+.div-login-container,
+.login-form {
   display: flex;
-  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
   justify-content: center;
-  margin-top: 8px;
-  color:white;
-  font-family:'Courier New', Courier, monospace;
-  border: none; 
-  
-  background: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
-  padding: 5px;
-  border-radius: 10px;
-  cursor: pointer;
+  flex-direction: column;
+
 }
-table,th,td{
-  border: 1px solid;
+
+
+
+
+.modal-wrapper {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(189, 189, 189, 0.9);
 }
-th,td{
-  padding: 1rem 0;
-  
-}
-table{
-    border-collapse: collapse;
-}
-.users-container{
-  float: left;
-  
-}
-.dashboard-container{
-  margin-left:20px;
-}
-.create-user-container{
-  float:right;
-  margin-left: 300px;
-}
-#button-createuser{
+
+
+
+#button-createuser {
   margin-top: 30px;
 }

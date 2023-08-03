@@ -1,24 +1,26 @@
 import React from 'react';
-import{
-    Route,  
+import {
+    Route,
     Routes,
-    
-}  from 'react-router-dom';
+
+} from 'react-router-dom';
 import { Dashbaord } from '../components/Dashboard';
-import {LoginForm} from '../components/LoginForm';
+import { LoginForm } from '../components/LoginForm';
 import { ProtectedPage } from '../components/ProtectedPage';
+import { Provider } from 'react-redux';
+import store from '../store';
 
 
 
 
 
-export const Routing = ()=>{
- 
+export const Routing = () => {
+
     return (
         <Routes>
-            <Route path="/" element={<ProtectedPage component={Dashbaord} />}/>
-            <Route path="/login" element={<LoginForm/>}/>
-            <Route path="/dashboard" element={<ProtectedPage component={Dashbaord} />}/> 
+            <Route path="/" element={<Provider store={store}><ProtectedPage component={Dashbaord} /></Provider>} />
+            <Route path="/login" element={<LoginForm />} />
+            <Route path="/dashboard" element={<Provider store={store}><ProtectedPage component={Dashbaord} /></Provider>} />
         </Routes>
     )
 }

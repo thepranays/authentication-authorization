@@ -1,0 +1,24 @@
+.emp-card {
+    display: flex;
+
+}
+
+.emp-card-img {
+    border-radius: 50%;
+    height: 50px;
+    object-fit: cover;
+}
+
+.emp-card-name {
+    margin-left: 5px;
+    text-align: center;
+    justify-self: center;
+
+
+}
+
+
+
+p {
+    margin: 0;
+}

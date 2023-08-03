@@ -3,7 +3,7 @@
 
 # config files
 .env
-
+/web/app/node_modules
 # Binaries for programs and plugins
 *.exe
 *.exe~

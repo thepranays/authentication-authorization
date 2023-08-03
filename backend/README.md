@@ -4,7 +4,7 @@ Make sure golang environment is setted up.[Setup golang](https://go.dev/doc/inst
 ## STEP #1:
 **Clone Repository**
 ```
-git clone https://github.com/HousewareHQ/houseware---backend-engineering-octernship-thepranays.git
+git clone https://github.com/thepranays/authentication-authorization
 ```
 
 ## STEP #2:
